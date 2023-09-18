@@ -9,7 +9,7 @@ h1{
 
 .flex_container{
     display: flex;
-    background-color: rgb(65, 211, 65);
+    
     flex-direction: row;
     flex-wrap: nowrap;
 }
