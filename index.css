@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(209, 209, 209);
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+.flex_container{
+    display: flex;
+    background-color: rgb(65, 211, 65);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex_container a{
+
+    color: black;
+    margin-left: 30px;
+   
+    line-height: 75px;
+    font-size: 30px;
+
+}
+.flex_container a:hover{
+    
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+.home{
+    flex-grow: 1;
+
+}
+
+nav ul{
+
+    list-style-type: none;
+}
+nav ul li{
+    font-weight: bold;
+    
+    
+}
+nav ul a{
+    text-decoration: none;
+    
+}
+
+
+
+main{
+    background-color: rgb(175, 171, 171);
+}
