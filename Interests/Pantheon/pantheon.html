@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pantheon.css">
     <title>Pantheon The Unbreakable Spear</title>
-    <script src="pantheon.js"></script>
+    <script src="pantheon.js" defer></script>
 
 </head>
 <body>
@@ -32,8 +32,36 @@
     <button id="start_the_show" onclick="StartTheShow()" > Open </button>
 
 
-    <iframe id="Pantheon_Words" width="850.5" height="483" src="https://www.youtube.com/embed/3V1HCcAw4R4" 
-    title="Pantheon&#39;s Words || Destiny" frameborder="0" allow="accelerometer;
-     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="player"></div>
+
+    <!-- <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '483',
+          width: '850',
+          videoId: '3V1HCcAw4R4',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      
+      function onPlayerStateChange(event) {
+            if(event.data == 2) {
+                console.log("Paused")
+            }
+            
+            else if(event.data == 1) {
+                console.log("playing")
+            }
+      }
+    </script> -->
 </body>
 </html>
