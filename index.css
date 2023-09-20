@@ -51,3 +51,9 @@ nav ul a{
 main{
     background-color: rgb(175, 171, 171);
 }
+
+header{
+
+    background-color: rgb(99, 99, 99);
+    margin-left: -30px;
+}
