@@ -1,0 +1,9 @@
+h1{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#player{
+    left: 20%;
+}
