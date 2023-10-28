@@ -1,0 +1,19 @@
+#game{
+    position: absolute;
+    width: 99%;
+    height: 90%;
+    top: 10%;
+    text-align: center;
+}
+iframe{
+    width: 90%;
+    height: 90%;
+
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+}
+
+#github_game_link{
+    text-decoration: none;
+    font-weight: bold;
+}
