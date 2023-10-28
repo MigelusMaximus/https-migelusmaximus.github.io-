@@ -6,11 +6,14 @@ audio.src = "pantheon_theme.mp3";
 function StartTheShow(){
     var video = document.getElementById("background_video");
     var start_the_show = document.getElementById('start_the_show');
+    var Pantheon_Name = document.getElementById('Pantheon_Name');
     audio.loop=true;
     audio.play();
     video.play();
     video.style.visibility="visible";
     start_the_show.style.visibility = "hidden";
+    Pantheon_Name.style.opacity = "100%"
+
 
     var tag = document.createElement('script');
 
