@@ -5,5 +5,16 @@ h1{
     text-align: center;
 }
 #player{
-    left: 20%;
+    display: flex;
+    justify-content: center;  /* Horizontally center content */
+    align-items: center;      /* Vertically center content */
+    height: 720px;            /* Match the height of the YouTube player */
+    width: 1280px;              /* Take up the full width of the parent/container */
+    margin: 0 auto;
+    overflow: hidden;   
+    
+}
+
+#navigation{
+    opacity: 1;
 }
