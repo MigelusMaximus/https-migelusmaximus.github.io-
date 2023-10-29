@@ -1,9 +1,26 @@
 #projects_flexbox{
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
+}
+#my_first_game{
+    text-align: center;
+    width: 25%; 
+     /* This will push the container to the left */
 }
 
 #game_icon{
-    width: 10%;
+    margin-top: -25px;
+    width: 75%;
+    border: 6px solid transparent;
 
+
+}
+a img {
+    transition: filter 0.5s; /* Smooth transition */
+}
+a:hover img{
+    filter: contrast(100%) saturate(400%);
+}
+#Enable_Sound{
+    width: 80px;
 }

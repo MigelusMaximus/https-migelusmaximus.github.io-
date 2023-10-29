@@ -22,3 +22,9 @@ iframe{
     margin-top: -1%;
     width: 10%;
 }
+a img {
+    transition: filter 0.3s; /* Smooth transition */
+}
+a:hover img{
+    filter: sepia(100%) hue-rotate(90deg);
+}
