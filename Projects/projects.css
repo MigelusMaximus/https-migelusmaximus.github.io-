@@ -1,0 +1,9 @@
+#projects_flexbox{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#game_icon{
+    width: 10%;
+
+}

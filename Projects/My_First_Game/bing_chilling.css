@@ -17,3 +17,8 @@ iframe{
     text-decoration: none;
     font-weight: bold;
 }
+
+#github{
+    margin-top: -1%;
+    width: 10%;
+}
