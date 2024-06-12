@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftTreesImage = document.querySelector('.left-trees-image');
     const rightTreesImage = document.querySelector('.right-trees-image');
     const grassImage = document.querySelector('.grass-image');
+    const navItems = document.querySelectorAll('.nav_item');
 
     // Make tree images non-clickable and bring to the front
     leftTreesImage.style.pointerEvents = 'none';
@@ -57,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const maxDistX = window.innerWidth / 3;
         const maxDistY = window.innerHeight / 3;
 
-        const opacityX = Math.pow(Math.min(distX / maxDistX, 1), 1); // More aggressive exponential function
-        const opacityY = Math.pow(Math.min(distY / maxDistY, 1), 1); // More aggressive exponential function
+        const opacityX = Math.pow(Math.min(distX / maxDistX, 1), 1.5); // More aggressive exponential function
+        const opacityY = Math.pow(Math.min(distY / maxDistY, 1), 1.5); // More aggressive exponential function
 
         const finalOpacity = Math.max(opacityX, opacityY);
         leftTreesImage.style.opacity = finalOpacity;
@@ -100,3 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+

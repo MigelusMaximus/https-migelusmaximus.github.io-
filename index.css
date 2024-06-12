@@ -112,12 +112,14 @@ nav {
     text-shadow: var(--text-shadow);
     margin-right: 20px;
     padding: 10px;
+    transition: font-size 0.3s ease-in-out;
+
 }
 
 /* Hover Effect for Nav Items */
 .nav_bar a:hover {
-    background-color: #33333344;
-    transition: background-color 0.3s ease;
+    font-size: 30px;
+
 }
 
 /* Hidden and Reveal Classes */
