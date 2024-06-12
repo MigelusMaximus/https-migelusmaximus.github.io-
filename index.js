@@ -10,16 +10,66 @@ document.addEventListener("DOMContentLoaded", function () {
         header.classList.add('reveal');
     }, 1500);  // 1500 milliseconds delay
 
-    // Subtle movement effect for h1
+    // Elements to move
     const header = document.querySelector('.header');
+    const personImage = document.querySelector('.person-image');
+    const skyImage = document.querySelector('.sky-image');
+    const leftTreesImage = document.querySelector('.left-trees-image');
+    const rightTreesImage = document.querySelector('.right-trees-image');
+    const grassImage = document.querySelector('.grass-image');
 
-    // Nav items
-    const navItems = document.querySelectorAll('.nav_item');
+    // Make tree images non-clickable and bring to the front
+    leftTreesImage.style.pointerEvents = 'none';
+    rightTreesImage.style.pointerEvents = 'none';
+    leftTreesImage.style.zIndex = 10;
+    rightTreesImage.style.zIndex = 10;
+
+    // Set initial opacity
+    leftTreesImage.style.opacity = 1;
+    rightTreesImage.style.opacity = 1;
 
     document.addEventListener('mousemove', function (e) {
-        const moveX = (e.clientX / window.innerWidth - 0.5) * 10; // Adjust multiplier for effect strength
-        const moveY = (e.clientY / window.innerHeight - 0.5) * 10; // Adjust multiplier for effect strength
+        const moveX = (e.clientX / window.innerWidth - 0.5) * 10;
+        const moveY = (e.clientY / window.innerHeight - 0.5) * 10;
         header.style.transform = `translate(${moveX}px, ${moveY}px)`;
+
+        // Align person image
+        const personMoveX = (e.clientX / window.innerWidth - 0.5) * 5;
+        const personMoveY = (e.clientY / window.innerHeight - 0.5) * 5 - 20; // Adjust vertical position
+        personImage.style.transform = `translate(${personMoveX}px, ${personMoveY}px) scale(1.05)`;
+
+        // Subtle movement for sky image
+        const skyMoveX = (e.clientX / window.innerWidth - 0.5) * 3;
+        const skyMoveY = (e.clientY / window.innerHeight - 0.5) * 3;
+        skyImage.style.transform = `translate(${skyMoveX}px, ${skyMoveY}px)`;
+
+        // Calculate the distance from the mouse to the center of the h1 element
+        const h1Bounds = document.querySelector('h1.header').getBoundingClientRect();
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        const centerX = (h1Bounds.left + h1Bounds.right) / 2;
+        const centerY = (h1Bounds.top + h1Bounds.bottom) / 2;
+
+        const distX = Math.abs(mouseX - centerX);
+        const distY = Math.abs(mouseY - centerY);
+
+        const maxDistX = window.innerWidth / 3;
+        const maxDistY = window.innerHeight / 3;
+
+        const opacityX = Math.pow(Math.min(distX / maxDistX, 1), 1); // More aggressive exponential function
+        const opacityY = Math.pow(Math.min(distY / maxDistY, 1), 1); // More aggressive exponential function
+
+        const finalOpacity = Math.max(opacityX, opacityY);
+        leftTreesImage.style.opacity = finalOpacity;
+        rightTreesImage.style.opacity = finalOpacity;
+
+        console.log(`Left Tree: opacity=${leftTreesImage.style.opacity}, Right Tree: opacity=${rightTreesImage.style.opacity}`);
+
+        // Apply subtle movement for grass image
+        const grassMoveX = (e.clientX / window.innerWidth - 0.5) * 5;
+        const grassMoveY = (e.clientY / window.innerHeight - 0.5) * 5;
+        grassImage.style.transform = `translate(${grassMoveX}px, ${grassMoveY}px)`;
 
         // Apply different movements for each nav item
         navItems.forEach((item, index) => {
