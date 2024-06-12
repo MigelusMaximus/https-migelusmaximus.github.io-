@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batzorig Vaanchig - Mongolian Artist</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-music"></i> Batzorig Vaanchig</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#biography" data-lang-en="Biography"
+                            data-lang-sk="Biografia">Biography</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#throat-singing" data-lang-en="Throat Singing"
+                            data-lang-sk="Hrdelný Spev">Throat Singing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements" data-lang-en="Achievements"
+                            data-lang-sk="Úspechy">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery" data-lang-en="Gallery"
+                            data-lang-sk="Galéria">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang-en="Contact"
+                            data-lang-sk="Kontakty">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-lang-en="Language"
+                            data-lang-sk="Jazyk">Language</a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="setLanguage('sk')">Slovak</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-lang-en="Info" data-lang-sk="Informácie"><i class="fas fa-info-circle"></i> Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 data-lang-en="Batzorig Vaanchig" data-lang-sk="Batzorig Vaanchig">Batzorig Vaanchig</h1>
+            <p data-lang-en="The voice of Mongolian culture" data-lang-sk="Hlas mongolskej kultúry">The voice of
+                Mongolian culture</p>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section id="biography" class="p-5">
+        <div class="container">
+            <h1 data-lang-en="Biography" data-lang-sk="Biografia">Biography</h1>
+            <p data-lang-en="Batzorig Vaanchig is a renowned Mongolian throat singer and musician. Born in 1977, he has captivated audiences worldwide with his unique blend of traditional Mongolian music and modern influences."
+                data-lang-sk="Batzorig Vaanchig je uznávaný mongolský spevák a hudobník. Narodený v roku 1977, zaujal publikum na celom svete svojou jedinečnou kombináciou tradičnej mongolskej hudby a moderných vplyvov.">
+            </p>
+            <p data-lang-en="His journey began in Ulaanbaatar, where he was inspired by the rich musical heritage of Mongolia. Over the years, he has mastered various forms of throat singing and has performed at numerous international venues."
+                data-lang-sk="Jeho cesta začala v Ulaanbaatare, kde ho inšpirovalo bohaté hudobné dedičstvo Mongolska. V priebehu rokov zvládol rôzne formy hrdelného spevu a vystupoval na mnohých medzinárodných pódiach.">
+            </p>
+        </div>
+    </section>
+
+    <!-- Throat Singing Section -->
+    <section id="throat-singing" class="p-5 bg-light">
+        <div class="container">
+            <h1 data-lang-en="Throat Singing" data-lang-sk="Hrdelný spev">Throat Singing</h1>
+            <p data-lang-en="Throat singing, also known as overtone singing, is a unique vocalization technique where a singer can produce multiple notes simultaneously. It is a traditional practice in Mongolian music and other cultures in Central Asia."
+                data-lang-sk="Hrdelný spev, tiež známy ako spev s alikvótmi, je jedinečná technika vokalizácie, pri ktorej spevák môže produkovať viacero tónov súčasne. Je to tradičná prax v mongolskej hudbe a iných kultúrach strednej Ázie.">
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2 data-lang-en="Khoomei" data-lang-sk="Khoomei">Khoomei</h2>
+                    <p data-lang-en="Khoomei is the most common style of throat singing. It involves producing a fundamental pitch with the vocal cords while simultaneously creating overtones with the mouth and throat. This style often sounds like a deep humming combined with high-pitched whistle-like tones."
+                        data-lang-sk="Khoomei je najbežnejší štýl hrdelného spevu. Zahŕňa produkciu základného tónu hlasivkami a súčasné vytváranie alikvótov ústami a hrdlom. Tento štýl často znie ako hlboké hučanie kombinované s vysokými piskľavými tónmi.">
+                    </p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h2 data-lang-en="Sygyt" data-lang-sk="Sygyt">Sygyt</h2>
+                    <p data-lang-en="Sygyt is characterized by a high-pitched, flute-like sound. Singers achieve this by tightening their vocal cords and manipulating their mouth and throat to create a high overtone while maintaining a strong fundamental pitch."
+                        data-lang-sk="Sygyt sa vyznačuje vysokým, flautovým zvukom. Speváci to dosahujú stiahnutím hlasiviek a manipuláciou úst a hrdla na vytvorenie vysokého alikvótu pri zachovaní silného základného tónu.">
+                    </p>
+
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h2 data-lang-en="Kargyraa" data-lang-sk="Kargyraa">Kargyraa</h2>
+                    <p data-lang-en="Kargyraa features deep, growling tones that are produced by vibrating the false vocal cords along with the true vocal cords. This style creates very low, rumbling sounds with prominent overtones."
+                        data-lang-sk="Kargyraa obsahuje hlboké, vrčivé tóny, ktoré sa vytvárajú vibráciou falošných hlasiviek spolu so skutočnými hlasivkami. Tento štýl vytvára veľmi nízke, hrmotné zvuky s výraznými alikvótmi.">
+                    </p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h2 data-lang-en="Borbannadyr" data-lang-sk="Borbannadyr">Borbannadyr</h2>
+                    <p data-lang-en="Borbannadyr is a rhythmic style of throat singing that mimics the sounds of a flowing river. Singers use rapid changes in pitch and tone to create a dynamic, watery effect."
+                        data-lang-sk="Borbannadyr je rytmický štýl hrdelného spevu, ktorý napodobňuje zvuky tečúcej rieky. Speváci používajú rýchle zmeny v tónine a tóne na vytvorenie dynamického, vodnatého efektu.">
+                    </p>
+                </div>
+                <div class="col-md-12 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/xvOCMpjHtvY?t=195s"
+                            title="Throat Singing Styles Example Video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="p-5">
+        <div class="container">
+            <h1 data-lang-en="Achievements" data-lang-sk="Úspechy">Achievements</h1>
+            <p data-lang-en="Batzorig Vaanchig has received numerous awards and recognitions for his contributions to music:"
+                data-lang-sk="Batzorig Vaanchig získal početné ocenenia a uznania za svoj prínos k hudbe:">Batzorig
+                Vaanchig has received numerous awards and recognitions for his contributions to music:</p>
+            <ul>
+
+                <li data-lang-en="2018 - Awarded the highest state honor of Mongolia; the Order of the Polar Star (Altan Gadas) by the Government of Mongolia"
+                    data-lang-sk="2018 - Ocenený najvyššou štátnou poctou Mongolska; Rád Polárnej hviezdy (Altan Gadas) vládou Mongolska">
+                    <i class="fas fa-medal"></i> 2018 - Awarded the highest state honor of Mongolia; the Order of the
+                    Polar Star (Altan Gadas) by the Government of Mongolia
+                </li>
+                <li data-lang-en="2015 - Our Khusugtun Ethnic band became a finalist at Asia's Got Talent"
+                    data-lang-sk="2015 - Naša etnická skupina Khusugtun sa stala finalistom na Asia's Got Talent">
+                    <i class="fas fa-medal"></i> 2015 - Our Khusugtun Ethnic band became a finalist at Asia's Got Talent
+                </li>
+                <li data-lang-en="2014 - The 2nd place as a Soloist-vocalist-instrumentalist at the “MIRA” Ethnic Music Award Competition, the International Ethnic Festival ‘Music and Crafts of Siberia-2014’, Krasnoyarsk city, Russia"
+                    data-lang-sk="2014 - 2. miesto ako sólista-spevák-inštrumentalista na “MIRA” Ethnic Music Award Competition, International Ethnic Festival ‘Music and Crafts of Siberia-2014’, Krasnoyarsk city, Rusko">
+                    <i class="fas fa-medal"></i> 2014 - The 2nd place as a Soloist-vocalist-instrumentalist at the
+                    “MIRA” Ethnic Music Award Competition, the International Ethnic Festival ‘Music and Crafts of
+                    Siberia-2014’, Krasnoyarsk city, Russia
+                </li>
+                <li data-lang-en="2012 - The best band of Rainforest Music Festival in Malaysia"
+                    data-lang-sk="2012 - Najlepšia skupina Rainforest Music Festivalu v Malajzii">
+                    <i class="fas fa-medal"></i> 2012 - The best band of Rainforest Music Festival in Malaysia
+                </li>
+                <li data-lang-en="2009 - Acapella Gold Medal at the III Delphic Games Jeju, South Korea"
+                    data-lang-sk="2009 - Zlatá medaila za acapellu na III. Delfských hrách Jeju, Južná Kórea">
+                    <i class="fas fa-medal"></i> 2009 - Acapella Gold Medal at the III Delphic Games Jeju, South Korea
+                </li>
+                <li data-lang-en="2009 - Awarded a title “Best Officer of Culture” of Mongolia"
+                    data-lang-sk="2009 - Ocenený titulom “Najlepší pracovník kultúry” Mongolska">
+                    <i class="fas fa-medal"></i> 2009 - Awarded a title “Best Officer of Culture” of Mongolia
+                </li>
+                <li data-lang-en="2009 - Special prize from the “Earth Breathing” - The International Competition of Throat Singers organized in Ulaan-Ude, Russian Federation"
+                    data-lang-sk="2009 - Špeciálna cena od “Earth Breathing” - Medzinárodná súťaž hrdelných spevákov organizovaná v Ulaan-Ude, Ruská federácia">
+                    <i class="fas fa-medal"></i> 2009 - Special prize from the “Earth Breathing” - The International
+                    Competition of Throat Singers organized in Ulaan-Ude, Russian Federation
+                </li>
+                <li data-lang-en="2008 - “The Best Staff of Culture” award from the Mongolian Trade Union"
+                    data-lang-sk="2008 - Cena „Najlepší pracovník kultúry“ od Mongolského odborového zväzu">
+                    <i class="fas fa-medal"></i> 2008 - “The Best Staff of Culture” award from the Mongolian Trade Union
+                </li>
+                <li data-lang-en="2008 - “BEST THROAT SINGER” title from the National Competition of Throat Singers of Mongolia"
+                    data-lang-sk="2008 - „Najlepší hrdelný spevák“ titul z Národnej súťaže hrdelných spevákov Mongolska">
+                    <i class="fas fa-medal"></i> 2008 - “BEST THROAT SINGER” title from the National Competition of
+                    Throat Singers of Mongolia
+                </li>
+            </ul>
+            <div class="progress mt-4">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" data-lang-en="And that is only 50% of his achievements"
+                    data-lang-sk="A to je len 50% jeho úspechov">And that is only 50% of his achievements</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="p-5 bg-light">
+        <div class="container">
+            <h1 data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/p_5yt5IX38I" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/_VuhApLdjOQ" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/AqtOucymkq4" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/bONCCjzNlk4" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Mks-Y_PF_7o" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/GEPDWAl5W-U" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Ctb7B2QkDfQ" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/hDQoAT60afs" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/bA0TEVvNUK0" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-5">
+        <div class="container">
+            <h1 data-lang-en="Contact" data-lang-sk="Kontakt">Contact</h1>
+            <p data-lang-en="Where to find Batzorig Vaanchig:" data-lang-sk="Kde nájsť Batzoriga Vaanchiga:">
+                Where to find Batzorig Vaanchig:</p>
+            <div class="contact-links">
+                <a href="https://open.spotify.com/artist/1ZCWa1CvefIK01WpQWvmGf?si=cj-uUYPoS7qi9FmDHxc-zw"
+                    class="btn btn-outline-primary m-2">
+                    <i class="fab fa-spotify"></i> Spotify
+                </a>
+                <a href="https://www.batzorigvaanchig.com/" class="btn btn-outline-primary m-2">
+                    <i class="fas fa-globe"></i> Website
+                </a>
+                <a href="https://www.youtube.com/@BatzorigVaanchig/featured" class="btn btn-outline-primary m-2">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 bg-dark text-white">
+        <p>© 2024 Batzorig Vaanchig. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Window -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" data-lang-en="Information" data-lang-sk="Informácie">
+                        Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p data-lang-en="You can change the language of
+                    the website. This website is informative, I do not own any videos and they are linked directly
+                    to Batzorig Vaanchig."
+                        data-lang-sk="Na tejto stránke si môžete zmeniť jazyk. Táto stránka funguje len ako informatívna, neprivlastňujem si žiadnu tvorbu a preto všetko linkujem priamo na autora.">
+                        You can
+                        change the language of
+                        the website. This website is informative, I do not own any videos and they are linked directly
+                        to Batzorig Vaanchig.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-lang-en="Close"
+                        data-lang-sk="Zavrieť">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
