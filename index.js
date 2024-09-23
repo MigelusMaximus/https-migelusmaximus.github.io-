@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.classList.remove('hidden');
         container.classList.add('reveal');
     }, 500);  // 500 milliseconds delay
+
     setTimeout(function () {
         const header = document.querySelector('.header');
         header.classList.remove('hidden');
@@ -18,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const rightTreesImage = document.querySelector('.right-trees-image');
     const grassImage = document.querySelector('.grass-image');
     const navItems = document.querySelectorAll('.nav_item');
-    const aboutMeItems = document.querySelectorAll('.about-me-item');
 
     // Make tree images non-clickable and bring to the front
     leftTreesImage.style.pointerEvents = 'none';
@@ -67,8 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const finalOpacity = Math.max(opacityX, opacityY);
         leftTreesImage.style.opacity = finalOpacity;
         rightTreesImage.style.opacity = finalOpacity;
-
-        console.log(`Left Tree: opacity=${leftTreesImage.style.opacity}, Right Tree: opacity=${rightTreesImage.style.opacity}`);
 
         // Apply subtle movement for grass image
         const grassMoveX = (e.clientX / window.innerWidth - 0.5) * 5;
@@ -122,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const aboutMeItems = document.querySelectorAll('.about-me-item');
     aboutMeItems.forEach(item => {
         observer.observe(item);
     });
