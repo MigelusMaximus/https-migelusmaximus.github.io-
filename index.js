@@ -126,6 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Dimming effect on h1 hover
+
+
     const h1 = document.querySelector('h1.header');
     const images = document.querySelectorAll('.background-image, .sky-image, .left-trees-image, .right-trees-image, .grass-image, .person-image');
 

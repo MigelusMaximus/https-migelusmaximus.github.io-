@@ -136,12 +136,12 @@
 
     /* Main Content Styling */
     main {
-        background-color: var(--text-color);
+        background-color: var(--secondary-color);
     }
 
     /* About Me Section Styling */
     .about-me-section {
-        background-image: url('Resources/Pictures/your_background_image.png');
+        background-image: url('Resources/Pictures/GitHub-Logo-.png');
         /* Replace with your background image */
         background-size: cover;
         background-position: center;
